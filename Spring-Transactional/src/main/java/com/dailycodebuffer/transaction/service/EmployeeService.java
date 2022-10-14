@@ -29,7 +29,7 @@ public class EmployeeService {
         Long departmentId = departmentRepository.save(department)
                             .getDepartmentId();
 
-        Employee  employee = null;
+        Employee  employee = new Employee();
 
         employee.setEmpName(employeeRequestVO.getEmpName());
         employee.setEmail(employeeRequestVO.getEmail());

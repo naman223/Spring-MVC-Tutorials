@@ -1,0 +1,19 @@
+$ curl -H "Content-Type: text/plain" localhost:8080/toUpperCase -d "naman"
+NAMAN
+
+$ curl -H "Content-Type: text/plain" localhost:8080/getMessage
+Welcome to Daily Code Buffer!!!
+
+$ curl -H "Content-Type: text/plain" localhost:8080/writeMessage -d "Naman Mehta"
+- returns output on server console
+
+$ curl -H "Content-Type: text/plain" localhost:8080/toLowerCase -d "Naman Mehta"
+naman mehta
+
+$ curl -H "Content-Type: application/json" localhost:8080/getEmployees
+{"employees":[{"empId":"1","empname":"Shabbir","email":"shabbir@gmail.com"},
+{"empId":"2","empname":"Nikhil","email":"nikhil@gmail.com"},
+{"empId":"3","empname":"Shivam","email":"shivam@gmail.com"},
+{"empId":"4","empname":"Shankhadeep","email":"Shankhadeep@gmail.com"}]}
+
+

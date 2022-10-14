@@ -1,19 +1,16 @@
 package com.dailycodebuffer.spring.function;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@AllArgsConstructor
+@NoArgsConstructor
 public class Employee {
 
     private String empId;
     private String empname;
     private String email;
-
-    public Employee() {
-    }
-
-    public Employee(String empId, String empname, String email) {
-        this.empId = empId;
-        this.empname = empname;
-        this.email = email;
-    }
 
     @Override
     public String toString() {
